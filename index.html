@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CV Assingnement</title>
+    <script defer src="myscript.js"></script>
+    <link rel="stylesheet" href= "styleform.css">
+
+</head>
+
+<body>
+   
+    <h2>Please fill the form below</h2>
+
+    <form action="cv.html" method="get">
+      <input type="text" id="fname" name="fname" placeholder="First name" onkeyup="onlyletters(this)"> <br><br>
+      <input type="text" id="midname" name="midname" placeholder="Middle name" onkeyup="onlyletters(this)"><br><br>
+      <input type="text" id="lname" name="lname" placeholder="Last name" onkeyup="onlyletters(this)"><br><br>
+      
+
+      <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value=""></option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          
+        </select><br><br>
+
+     
+      <input type="number" id="pnumber" name="pnumber" placeholder="Phone number" onkeyup="onlynumbers(this)"> <br><br>
+
+      <input type="text" id="email" name="email" placeholder="Email"><br><br>
+
+      <input type="text" id="address" name="address" placeholder="Address"><br><br>
+
+      <input type="submit" value="Submit" onclick= "passvalues() ;"/>
+
+    </form>
+      
+</body>
+</html>
